@@ -21,7 +21,7 @@ int main() {
     FILE * fpointer = fopen("Task_Manager.txt", "a");
     char taskName1 [20];
     char taskName2 [20];
-    
+    // Add more task names if needed
     printf("What task did you complete?\n");
     scanf("%s %s", taskName1, taskName2);
     fprintf(fpointer,"%s %s @ %s" , taskName1, taskName2, dateString);
