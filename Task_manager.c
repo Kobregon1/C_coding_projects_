@@ -18,7 +18,7 @@ int main() {
     dateString[strlen(dateString)-1] = '\0';
 
     printf("\nCurrent Date & time: %s", dateString);
-    printf("---------------------------------------------\n");
+    printf("\n---------------------------------------------\n");
 
     FILE * fpointer = fopen("Task_Manager.txt", "a");
     
