@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <string.h>
 
 void Drawing();
 
@@ -14,17 +15,19 @@ int main() {
 
     // Convert the current time to a string representation
     char *dateString = ctime(&currentTime);
+    dateString[strlen(dateString)-1] = '\0';
 
     printf("\nCurrent Date & time: %s", dateString);
     printf("---------------------------------------------\n");
 
     FILE * fpointer = fopen("Task_Manager.txt", "a");
-    char taskName1 [20];
-    char taskName2 [20];
-    // Add more task names if needed
+    
+    char taskName [100];
+    
     printf("What task did you complete?\n");
-    scanf("%s %s", taskName1, taskName2);
-    fprintf(fpointer,"%s %s @ %s" , taskName1, taskName2, dateString);
+    fgets(taskName, 100, stdin);
+   
+    fprintf(fpointer,"%s: %s", dateString, taskName);
     
     fclose(fpointer);
     return 0;
