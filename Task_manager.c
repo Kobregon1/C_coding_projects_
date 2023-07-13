@@ -8,7 +8,7 @@ void capitalizeInput(char *input);
 void updateTime(char *dateString);
 void addTask(FILE *fpointer, char *dateString, int *inputCount);
 
-// Change to main5 when using App_Menu.c
+// change to main5 when using App_Menu.c
 int main() {
     Drawing();
     
@@ -17,9 +17,9 @@ int main() {
     capitalizeInput(dateString);
 
     printf("\nCurrent Date & time: %s\n", dateString);
-    printf("\n---------------------------------------------\n");
+    printf("---------------------------------------------\n");
 
-    FILE *fpointer = fopen("Task_Manager.txt", "w"); // Change to "a" to add tasks
+    FILE *fpointer = fopen("Task_Manager.txt", "a");
     char taskName[100];
 
     printf("What task did you complete?\n");
@@ -78,8 +78,8 @@ void addTask(FILE *fpointer, char *dateString, int *inputCount) {
         updateTime(dateString);
         
         if (strcmp(taskName, "None\n") == 0 || strcmp(taskName, "none\n") == 0) {
-            printf("No more tasks added\n");
-            *inputCount = 100;
+            printf("\nNo more tasks added\n");
+            break;
         } else {
             fprintf(fpointer, "%s: %s", dateString, taskName);
         }
@@ -87,7 +87,7 @@ void addTask(FILE *fpointer, char *dateString, int *inputCount) {
         (*inputCount)++;
         
         if (*inputCount > 50) {
-            printf("Maximum task limit reached\n");
+            printf("\nTask Manager Exited\n");
             break;
         }
         
