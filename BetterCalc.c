@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 // Objective here will be to ask the user for 2 numbers and a special character
-int main6(){
+
+// Change to main 6 when using App_Menu.c
+int main(){
 
     char operator;
     double num1;
