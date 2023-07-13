@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main7(){
+// Change to main7 when using App_Menu.c
+int main(){
     char filePath[100];
     printf("\nCopy path to file:");
     scanf("%s", filePath);
