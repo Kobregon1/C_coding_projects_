@@ -16,6 +16,7 @@ void computerMove();
 char checkWinner();
 void printWinner(char);
 
+// Change to main4 when using App_Menu.c
 int main(){
 
     char winner = ' ';
