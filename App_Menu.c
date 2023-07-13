@@ -102,23 +102,23 @@ void menuChoice(){
         printf("---Python File Sucessfully Made---\n");
         break;
 
-        // TicTacToe Game
+        // TicTacToe.c
         case 4:
         printf("\n");
         main4();
         break;
 
-        // Task Manager
+        // Task_manager.c
         case 5:
         main5();
         break;
 
-        // Calculator
+        // BetterCalc.c
         case 6:
         main6();
         break;
 
-        // Open and read file
+        // Read_file.c
         case 7:
         main7();
         break;
