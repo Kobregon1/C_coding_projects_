@@ -42,13 +42,14 @@ int main(){
 void menuChoice(){
     int choice;
     char fileName[50];
-    char Cpp_dir_path[] = "C:\\Users\\kevin\\OneDrive\\Desktop\\C_C++\\C++\\";
-    char python_dir_path[] = "C:\\Users\\kevin\\OneDrive\\Desktop\\Python\\";
+
+    char Cpp_dir_path[] =     	// Copy C++ directory path here;
+    char Python_dir_path[] =    // Copy Python directory path here;
+    char C_dir_path[] =         // Copy C directory path here;
+    
     char typeC[5]= ".c";
     char typeCpp[5]= ".cpp";
     char typePython[5]= ".py";
-    char case4Choice;
-    char Path_to_file[200];
 
     printf("Enter choice (1-9): ");
     scanf("%d", &choice);
@@ -62,9 +63,10 @@ void menuChoice(){
         scanf("%s", fileName);
         getchar();
 
-        strcat(fileName, typeC);
+        strcat(C_dir_path, fileName);
+        strcat(C_dir_path, typeC);
 
-        FILE *pCfile = fopen(*&fileName, "w");
+        FILE *pCfile = fopen(C_dir_path, "w");
         fclose(pCfile);
 
         printf("---C File Sucessfully Made---\n");
@@ -74,6 +76,7 @@ void menuChoice(){
         case 2:
         printf("\nFile Name: ");
         scanf("%s", fileName);
+        getchar();
 
         strcat(Cpp_dir_path, fileName);
         strcat(Cpp_dir_path, typeCpp);
@@ -90,10 +93,10 @@ void menuChoice(){
         scanf("%s", fileName);
         getchar();
         
-        strcat(python_dir_path, fileName);
-        strcat(python_dir_path, typePython);
+        strcat(Python_dir_path, fileName);
+        strcat(Python_dir_path, typePython);
         
-        FILE *pPythonfile = fopen(python_dir_path, "w");
+        FILE *pPythonfile = fopen(Python_dir_path, "w");
         fclose(pPythonfile);
 
         printf("---Python File Sucessfully Made---\n");
