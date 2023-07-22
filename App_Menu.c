@@ -5,7 +5,7 @@
 #include "BetterCalc.c"
 #include "Task_Manager.c"
 #include "Read_file.c"
-
+# Added comment from GitHub
 void Menu(char choices[][50]);
 void menuChoice();
 void returnToMenu();
