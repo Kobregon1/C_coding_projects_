@@ -8,7 +8,6 @@ void capitalizeInput(char *input);
 void updateTime(char *dateString);
 void addTask(FILE *fpointer, char *dateString, int *inputCount);
 
-// change to main5 when using App_Menu.c
 int main() {
     Drawing();
     

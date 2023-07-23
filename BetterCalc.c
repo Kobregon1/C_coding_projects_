@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-// Change to main6 when using App_Menu.c
 int main(){
 
     char operator;
