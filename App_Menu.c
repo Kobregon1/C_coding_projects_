@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "TicTacToe.c"
-#include "BetterCalc.c"
-#include "Task_Manager.c"
-#include "Read_file.c"
+#include "TicTacToe.h"
+#include "BetterCalc.h"
+#include "Task_Manager.h"
+#include "Read_File.h"
 
 void Menu(char choices[][50]);
 void menuChoice();
@@ -102,25 +102,25 @@ void menuChoice(){
         printf("---Python File Sucessfully Made---\n");
         break;
 
-        // TicTacToe.c
+        // TicTacToe.h
         case 4:
         printf("\n");
-        main4();
+        TicTacToe();
         break;
 
-        // Task_manager.c
+        // Task_manager.h
         case 5:
-        main5();
+        TaskManager();
         break;
 
-        // BetterCalc.c
+        // BetterCalc.h
         case 6:
-        main6();
+        BetterCalc();
         break;
 
-        // Read_file.c
+        // Read_file.h
         case 7:
-        main7();
+        ReadFile();
         break;
 
         default:
