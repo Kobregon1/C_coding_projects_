@@ -45,6 +45,8 @@ int main(){
 
     Drawing(Matrix1.i, Matrix1.j, Matrix1.k, Matrix2.i, Matrix2.j, Matrix2.k);
     CrossProduct(Matrix1.i, Matrix1.j, Matrix1.k, Matrix2.i, Matrix2.j, Matrix2.k);
+
+    return 0;
 }
 
 void Drawing(double x1, double y1, double z1, double x2, double y2, double z2){
