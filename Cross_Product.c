@@ -4,7 +4,7 @@ typedef struct{
     double i;
     double j;
     double k;
-} matrix;
+} vector;
 
 void Drawing(double, double, double, double, double, double);
 void CrossProduct(double, double, double, double, double, double);
@@ -34,17 +34,19 @@ int main(){
     scanf("%lf", &z2);
     printf("\n");
 
-    matrix Matrix1 = {x1, y1, z1};
-    printf("Matrix 1: <%0.2fi + %0.2fj + %0.2fk>\n", Matrix1.i, Matrix1.j, Matrix1.k);
+    vector Vector1 = {x1, y1, z1};
+    printf("Vector 1: <%0.2fi + %0.2fj + %0.2fk>\n", Vector1.i, Vector1.j, Vector1.k);
 
-    matrix Matrix2 = {x2, y2, z2};
-    printf("Matrix 2: <%0.2fi + %0.2fj + %0.2fk>\n", Matrix2.i, Matrix2.j, Matrix2.k);
+    vector Vector2 = {x2, y2, z2};
+    printf("Vector 2: <%0.2fi + %0.2fj + %0.2fk>\n", Vector2.i, Vector2.j, Vector2.k);
     printf("\n");
     printf("Calculating Cross Product...\n");
     printf("\n");
 
-    Drawing(Matrix1.i, Matrix1.j, Matrix1.k, Matrix2.i, Matrix2.j, Matrix2.k);
-    CrossProduct(Matrix1.i, Matrix1.j, Matrix1.k, Matrix2.i, Matrix2.j, Matrix2.k);
+    Drawing(Vector1.i, Vector1.j, Vector1.k, Vector2.i, Vector2.j, Vector2.k);
+    CrossProduct(Vector1.i, Vector1.j, Vector1.k, Vector2.i, Vector2.j, Vector2.k);
+
+    return 0;
 }
 
 void Drawing(double x1, double y1, double z1, double x2, double y2, double z2){
@@ -61,7 +63,7 @@ void CrossProduct(double x1, double y1, double z1, double x2, double y2, double 
     j = (x1 * z2) - (z1 * x2);
     k = (x1 * y2) - (y1 * x2);
     
-    matrix cross_product = {i, j, k};
+    vector cross_product = {i, j, k};
     
     printf("= <%0.2fi - (%0.2f)j + %0.2fk>\n", cross_product.i,cross_product.j, cross_product.k);
     printf("\n");
