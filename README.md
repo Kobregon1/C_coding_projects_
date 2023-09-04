@@ -3,7 +3,7 @@ General coding projects or self made projects, mainly towards programming in C.
 # Table of Contents
 
 1. [Basic_Calculator.c](https://github.com/Kobregon1/C_coding_projects_/blob/main/Basic_Calculator.c) - Performs basic numerical calculations.
-2. [Matrix_Calculator.c](https://github.com/Kobregon1/C_coding_projects_/blob/main/Matrix_Calculator.c) - Calculates the cross product of two vectors. Provides visualized table representation of the calculation and final result.
+2. Cross_Product.c - Calculates the cross product of two vectors. Provides visualized table representation of the calculation and final result.
 3. [Read_file.c](https://github.com/Kobregon1/C_coding_projects_/blob/main/Read_file.c) - Reads txt files in a given directory.
 4. [Task_Manager.c](https://github.com/Kobregon1/C_coding_projects_/blob/main/Task_Manager.c) - Manages various tasks performed throughout the day and includes the date and time of task.
 5. [TicTacToe.c](https://github.com/Kobregon1/C_coding_projects_/blob/main/TicTacToe.c) - Single player game of TicTacToe
