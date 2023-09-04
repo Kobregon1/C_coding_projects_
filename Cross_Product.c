@@ -43,14 +43,9 @@ int main(){
     printf("Calculating Cross Product...\n");
     printf("\n");
 
-<<<<<<< HEAD:Cross_Product.c
     Drawing(Vector1.i, Vector1.j, Vector1.k, Vector2.i, Vector2.j, Vector2.k);
     CrossProduct(Vector1.i, Vector1.j, Vector1.k, Vector2.i, Vector2.j, Vector2.k);
-=======
-    Drawing(Matrix1.i, Matrix1.j, Matrix1.k, Matrix2.i, Matrix2.j, Matrix2.k);
-    CrossProduct(Matrix1.i, Matrix1.j, Matrix1.k, Matrix2.i, Matrix2.j, Matrix2.k);
->>>>>>> 41274bb183e011d178abd96c5f275918ea8675d2:Matrix_Calculator.c
-
+    
     return 0;
 }
 
