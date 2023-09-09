@@ -64,7 +64,8 @@ void CrossProduct(double x1, double y1, double z1, double x2, double y2, double 
     k = (x1 * y2) - (y1 * x2);
     
     vector cross_product = {i, j, k};
-    
+
+    printf("\n");
     printf("= <%0.2fi - (%0.2f)j + %0.2fk>\n", cross_product.i,cross_product.j, cross_product.k);
     printf("\n");
 };
